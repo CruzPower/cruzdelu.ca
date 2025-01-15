@@ -32,7 +32,7 @@
     <button id="play-button" onclick="playMusic()">welcome</button>
     <img id="salad-image" src="salad.jpg" alt="Background Image">
     <audio id="background-music" loop>
-        <source src="song.mp3" type="audio/mpeg">
+        <source src="song1.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
     <script>
@@ -45,29 +45,37 @@
             button.style.display = 'none'; // Hide the button
         }
     </script>
-</body>
-<button id="leave-button" onclick="leavePage()" style="display:none;">set sail</button>
-<script>
-    function leavePage() {
-        var audio = document.getElementById('background-music');
-        var fadeOutInterval = setInterval(function() {
-            if (audio.volume > 0.1) {
-                audio.volume -= 0.1;
-            } else {
-                clearInterval(fadeOutInterval);
-                audio.pause();
-                audio.currentTime = 0;
-                document.body.innerHTML = '<h1 style="color: white;">🫡</h1>';
-                setTimeout(function() {
-                    window.close();
-                }, 10000);
-            }
-        }, 200);
-    }
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+        <button id="interconnectedness-button" onclick="goToInterconnectedness()" style="display:none;">lattice</button>
+        <button id="leave-button" onclick="leavePage()" style="display:none;">set sail</button>
+    </div>
+    <script>
+        function leavePage() {
+            var audio = document.getElementById('background-music');
+            var fadeOutInterval = setInterval(function() {
+                if (audio.volume > 0.1) {
+                    audio.volume -= 0.1;
+                } else {
+                    clearInterval(fadeOutInterval);
+                    audio.pause();
+                    audio.currentTime = 0;
+                    document.body.innerHTML = '<h1 style="color: white;">🫡</h1>';
+                    setTimeout(function() {
+                        window.close();
+                    }, 10000);
+                }
+            }, 200);
+        }
 
-    // Show the leave button after the music starts playing
-    document.getElementById('background-music').addEventListener('play', function() {
-        document.getElementById('leave-button').style.display = 'block';
-    });
-</script>
+        function goToInterconnectedness() {
+            window.location.href = 'INTERCONNECTEDNESS.html';
+        }
+
+        // Show the leave button and interconnectedness button after the music starts playing
+        document.getElementById('background-music').addEventListener('play', function() {
+            document.getElementById('leave-button').style.display = 'block';
+            document.getElementById('interconnectedness-button').style.display = 'block';
+        });
+    </script>
+</body>
 </html>
