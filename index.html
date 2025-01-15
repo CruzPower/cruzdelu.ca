@@ -29,7 +29,7 @@
     </style>
 </head>
 <body>
-    <button id="play-button" onclick="playMusic()">interconnectedness</button>
+    <button id="play-button" onclick="playMusic()">welcome</button>
     <img id="salad-image" src="salad.jpg" alt="Background Image">
     <audio id="background-music" loop>
         <source src="song.mp3" type="audio/mpeg">
@@ -46,4 +46,28 @@
         }
     </script>
 </body>
+<button id="leave-button" onclick="leavePage()" style="display:none;">set sail</button>
+<script>
+    function leavePage() {
+        var audio = document.getElementById('background-music');
+        var fadeOutInterval = setInterval(function() {
+            if (audio.volume > 0.1) {
+                audio.volume -= 0.1;
+            } else {
+                clearInterval(fadeOutInterval);
+                audio.pause();
+                audio.currentTime = 0;
+                document.body.innerHTML = '<h1 style="color: white;">🫡</h1>';
+                setTimeout(function() {
+                    window.close();
+                }, 10000);
+            }
+        }, 200);
+    }
+
+    // Show the leave button after the music starts playing
+    document.getElementById('background-music').addEventListener('play', function() {
+        document.getElementById('leave-button').style.display = 'block';
+    });
+</script>
 </html>
