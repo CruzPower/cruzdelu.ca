@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Background Music</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+        }
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            cursor: pointer;
+            display: none; /* Initially hide the image */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="play-button" onclick="playMusic()">interconnectedness</button>
+    <img id="salad-image" src="salad.jpg" alt="Background Image">
+    <audio id="background-music" loop>
+        <source src="song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('background-music');
+            var image = document.getElementById('salad-image');
+            var button = document.getElementById('play-button');
+            audio.play();
+            image.style.display = 'block'; // Make the image visible
+            button.style.display = 'none'; // Hide the button
+        }
+    </script>
+</body>
+</html>
