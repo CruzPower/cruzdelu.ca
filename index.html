@@ -47,6 +47,7 @@
     </script>
     <div style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
         <button id="interconnectedness-button" onclick="goToInterconnectedness()" style="display:none;">lattice</button>
+        <button id="secret-button" onclick="goToSecret()" style="display:none;">avenue</button>
         <button id="leave-button" onclick="leavePage()" style="display:none;">set sail</button>
     </div>
     <script>
@@ -71,10 +72,14 @@
             window.location.href = 'INTERCONNECTEDNESS.html';
         }
 
+        function goToSecret() {
+            window.location.href = 'secret.html';
+        }
         // Show the leave button and interconnectedness button after the music starts playing
         document.getElementById('background-music').addEventListener('play', function() {
             document.getElementById('leave-button').style.display = 'block';
             document.getElementById('interconnectedness-button').style.display = 'block';
+            document.getElementById('secret-button').style.display = 'block';
         });
     </script>
 </body>
