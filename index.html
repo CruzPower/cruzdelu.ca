@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cruz Joseph DeLuca - Technology Rep Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+  html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  }
+
+  /* Ensure the navbar stays fixed at the top */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: add transparency */
+    z-index: 50; /* Ensure it stays above other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Optional: shadow for depth */
+  }
+
+  /* Add scroll offset for sections to account for the fixed navbar */
+  section {
+    scroll-margin-top: 80px; /* Adjust this value to match your navbar height */
+    padding-top: 80px; /* Ensure proper spacing for the sections */
+    padding-bottom: 80px; /* Ensure there is some spacing in sections */
+  }
+
+  /* Ensure the hero section doesn't overlap with the navbar */
+  #home {
+    padding-top: 120px; /* This accounts for the navbar height */
+    z-index: 10;
+  }
+
+  /* Adjust content inside hero section */
+  #home .absolute {
+    z-index: 5;
+  }
+</style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-800 text-white fixed top-0 w-full z-50 shadow-lg">
+    <div class="max-w-4xl mx-auto flex justify-between items-center p-4">
+      <a href="#home" class="text-xl font-bold">Cruz Joseph DeLuca</a>
+      <ul class="flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+        <li><a href="#about" class="hover:text-blue-400">About</a></li>
+        <li><a href="#work" class="hover:text-blue-400">Work</a></li>
+        <li><a href="#fit" class="hover:text-blue-400">Why I'm a Good Fit</a></li>
+        <li><a href="#contact" class="hover:text-blue-400">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+
+<section id="home" class="h-screen flex justify-center items-center relative">
+  <div class="relative w-full h-full max-w-4xl mx-auto overflow-hidden rounded-xl">
+    <div class="absolute inset-0 bg-black opacity-20"></div> <!-- Overlay to darken the background -->
+    <img src="background.jpg" alt="Background Image" class="object-cover w-full h-full">
+  </div>
+  <div class="absolute bottom-28 w-full text-center text-white z-10">
+    <!-- Frosted Glass Effect Container -->
+    <div class="frosted-glass p-6 rounded-lg inline-block shadow-lg">
+      <h1 class="text-5xl font-bold">Cruz Joseph DeLuca</h1>
+      <p class="text-lg mt-2">I don't fake passion. I create what matters.</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  /* Frosted Glass Effect */
+  .frosted-glass {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow for floating effect */
+  }
+</style>
+
+
+
+
+  <!-- About Me Section -->
+  <!-- About Me Section -->
+<!-- About Me Section -->
+<section id="about" class="py-20 text-center" data-aos="fade-up">
+  <h2 class="text-3xl font-semibold border-b border-gray-700 pb-2 mb-6">About Me</h2>
+  <p class="text-lg max-w-3xl mx-auto text-gray-300 text-left">
+    I’m Cruz. I’m a tech enthusiast who’s been surrounded by gadgets and systems since I can remember. Right now, I’m balancing school, my job at Food Basics, and trying to push myself to learn something new every day—whether that’s diving deeper into AI or figuring out how to make better videos.
+  </p>
+  <p class="text-lg max-w-3xl mx-auto text-gray-300 text-left mt-6">
+    I’ve always had a thing for video production—whether it’s editing footage for fun, working on small projects, or just figuring out the technical side of things like lighting and sound. The cool part about this tech world is how quickly it evolves, and I’m always chasing after that next thing, that next big project that challenges me.
+  </p>
+  <p class="text-lg max-w-3xl mx-auto text-gray-300 text-left mt-6">
+    Beyond just the software and equipment, I really enjoy the creative process. It’s one thing to know how to use tools, but it’s another to make something that feels real, something that connects with people. That’s why I’m drawn to video—there’s a story behind every frame, and it’s exciting to be able to piece that together.
+  </p>
+  <p class="text-lg max-w-3xl mx-auto text-gray-300 text-left mt-6">
+    When it comes to being a tech rep, I see it as more than just fixing problems. It’s about bringing ideas to life. Whether it’s helping people get their equipment set up for a project or working on something bigger, I want to make sure everyone has the tools they need to get the job done. Because at the end of the day, it’s all about creating and making things work.
+  </p>
+
+  <ul class="max-w-3xl mx-auto text-gray-300 text-left mt-6 list-disc pl-5">
+    <li>Created promotional videos and advertisements for school events</li>
+    <li>Edited and fine-tuned video content, ensuring high-quality production</li>
+    <li>Assisted in setting up video and audio equipment for events and projects</li>
+    <li>Collaborated with other members of the student council on creative concepts</li>
+    <li>Produced content for online platforms to promote student activities and initiatives</li>
+    <li>Managed the filming and post-production of various school functions</li>
+    
+  </ul>
+</section>
+
+
+
+  <!-- Work Section -->
+  <!-- Work Section -->
+<section id="work" class="bg-gray-800 py-20" data-aos="fade-up">
+  <h2 class="text-3xl font-semibold text-center text-white mb-8">My Work</h2>
+  <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Video 1 -->
+    <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+      <video controls class="w-full rounded-lg">
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3 class="text-xl font-medium text-white mt-4">Project Title 1</h3>
+      <p class="text-gray-400">Description of the first video project. Add details about the tools used and the impact.</p>
+    </div>
+    <!-- Video 2 -->
+    <div class="bg-gray-700 p-4 rounded-lg shadow-lg">
+      <video controls class="w-full rounded-lg">
+        <source src="video2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3 class="text-xl font-medium text-white mt-4">Project Title 2</h3>
+      <p class="text-gray-400">Description of the second video project. Add details about the tools used and the impact.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- Why I'm a Good Fit Section -->
+  <section id="fit" class="py-20 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold border-b border-gray-700 pb-2 mb-6">Why I'm a Good Fit</h2>
+    <ul class="max-w-3xl mx-auto text-gray-300 space-y-4">
+      <li class="flex items-center"><span class="mr-3 text-blue-400">•</span> Strong knowledge of technology tools and platforms</li>
+      <li class="flex items-center"><span class="mr-3 text-blue-400">•</span> Excellent communication skills</li>
+      <li class="flex items-center"><span class="mr-3 text-blue-400">•</span> Passionate about helping others understand and use tech</li>
+      <li class="flex items-center"><span class="mr-3 text-blue-400">•</span> Dedicated to making a positive impact in the community</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-900 py-20 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold text-white mb-8">Contact Me</h2>
+    <ul class="text-gray-300 space-y-4">
+      <li>Email: <a href="mailto:you@example.com" class="text-blue-400 hover:underline">you@example.com</a></li>
+      <li>GitHub: <a href="https://github.com/CruzDeLuca" class="text-blue-400 hover:underline">github.com/CruzDeLuca</a></li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-600 text-sm py-6 border-t border-gray-700">
+    &copy; 2025 Cruz Joseph DeLuca. Built from scratch.
+  </footer>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
